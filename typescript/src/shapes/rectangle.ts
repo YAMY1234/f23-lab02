@@ -1,18 +1,13 @@
-interface Rectangle {
-    width: number,
-    height: number,
-    computeArea: () => number
-}
+import { Shape } from './shape';
 
-function newRectangle(width: number, height: number): Rectangle {
-    return {
-        width,
-        height,
+class Rectangle implements Shape {
+    constructor(private width: number, private height: number) {}
 
-        computeArea: function (): number {
-            return width * height
-        }
+    computeArea(): number {
+        return this.width * this.height;
     }
 }
 
-export { Rectangle, newRectangle }
+export function newRectangle(width: number, height: number): Shape {
+    return new Rectangle(width, height);
+}
