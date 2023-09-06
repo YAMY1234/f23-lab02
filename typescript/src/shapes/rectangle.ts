@@ -1,4 +1,4 @@
-import { Shape } from './shape';
+import { Shape } from './shape.js';
 
 class Rectangle implements Shape {
     constructor(private width: number, private height: number) {}

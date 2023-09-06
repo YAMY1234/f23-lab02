@@ -1,4 +1,4 @@
-import { Shape } from './shape';
+import { Shape } from './shape.js';
 
 class Circle implements Shape {
     constructor(private radius: number) {}

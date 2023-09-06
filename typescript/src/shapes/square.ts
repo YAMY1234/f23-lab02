@@ -1,4 +1,4 @@
-import { Shape } from './shape';
+import { Shape } from './shape.js';
 
 class Square implements Shape {
     constructor(private sideLen: number) {}
